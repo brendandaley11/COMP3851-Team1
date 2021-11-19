@@ -1,0 +1,256 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59DFC164-E9E7-4FE9-B308-C7B83BBA1475}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COMP3851_Team_1</RootNamespace>
+    <AssemblyName>COMP3851_Team_1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44372</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about_us.aspx" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\Lightbox-Gallery.css" />
+    <Content Include="assets\css\navbar.css" />
+    <Content Include="assets\css\Navigation-with-Button.css" />
+    <Content Include="assets\css\Navigation-with-Search.css" />
+    <Content Include="assets\css\Projects-Horizontal.css" />
+    <Content Include="assets\css\Simple-Slider.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\img\banner.jpg" />
+    <Content Include="assets\img\banner1.png" />
+    <Content Include="assets\img\enorl.jpg" />
+    <Content Include="assets\img\enrol1.png" />
+    <Content Include="assets\img\enrol2.png" />
+    <Content Include="assets\img\enrol3.png" />
+    <Content Include="assets\img\enrol4.png" />
+    <Content Include="assets\img\Logo.jpg" />
+    <Content Include="assets\img\Orientation.jpg" />
+    <Content Include="assets\img\plan.jpg" />
+    <Content Include="assets\img\prepare.jpg" />
+    <Content Include="assets\img\progplan.png" />
+    <Content Include="assets\img\progplan2.png" />
+    <Content Include="assets\img\uniclass1.png" />
+    <Content Include="assets\img\uniclass2.png" />
+    <Content Include="assets\js\Collapsible.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\Simple-Slider.js" />
+    <Content Include="assets\video\callcampus.mp4" />
+    <Content Include="assets\video\citycampus.mp4" />
+    <Content Include="assets\video\studentlife.mp4" />
+    <Content Include="before_you_start.aspx" />
+    <Content Include="SingaporeMap.aspx" />
+    <Content Include="PortMacquarieMap.aspx" />
+    <Content Include="SydneyMap.aspx" />
+    <Content Include="OurimbahMap.aspx" />
+    <Content Include="NewcastleMap.aspx" />
+    <Content Include="CallaghanMap.aspx" />
+    <Content Include="CampusMap.aspx" />
+    <Content Include="course_selection.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="orientation.aspx" />
+    <Content Include="ProgramAdvisors.aspx" />
+    <Content Include="ProgramConvenors.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about_us.aspx.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_us.aspx.designer.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="before_you_start.aspx.cs">
+      <DependentUpon>before_you_start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="before_you_start.aspx.designer.cs">
+      <DependentUpon>before_you_start.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SingaporeMap.aspx.cs">
+      <DependentUpon>SingaporeMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SingaporeMap.aspx.designer.cs">
+      <DependentUpon>SingaporeMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PortMacquarieMap.aspx.cs">
+      <DependentUpon>PortMacquarieMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PortMacquarieMap.aspx.designer.cs">
+      <DependentUpon>PortMacquarieMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SydneyMap.aspx.cs">
+      <DependentUpon>SydneyMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SydneyMap.aspx.designer.cs">
+      <DependentUpon>SydneyMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurimbahMap.aspx.cs">
+      <DependentUpon>OurimbahMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OurimbahMap.aspx.designer.cs">
+      <DependentUpon>OurimbahMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewcastleMap.aspx.cs">
+      <DependentUpon>NewcastleMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewcastleMap.aspx.designer.cs">
+      <DependentUpon>NewcastleMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CallaghanMap.aspx.cs">
+      <DependentUpon>CallaghanMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CallaghanMap.aspx.designer.cs">
+      <DependentUpon>CallaghanMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CampusMap.aspx.cs">
+      <DependentUpon>CampusMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CampusMap.aspx.designer.cs">
+      <DependentUpon>CampusMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="course_selection.aspx.cs">
+      <DependentUpon>course_selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="course_selection.aspx.designer.cs">
+      <DependentUpon>course_selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orientation.aspx.cs">
+      <DependentUpon>orientation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orientation.aspx.designer.cs">
+      <DependentUpon>orientation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdvisors.aspx.cs">
+      <DependentUpon>ProgramAdvisors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdvisors.aspx.designer.cs">
+      <DependentUpon>ProgramAdvisors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramConvenors.aspx.cs">
+      <DependentUpon>ProgramConvenors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramConvenors.aspx.designer.cs">
+      <DependentUpon>ProgramConvenors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52773</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44372/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
