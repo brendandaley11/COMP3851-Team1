@@ -1,0 +1,54 @@
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Enrolment.aspx.cs" Inherits="UoN_Course_Enrolment._Default" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="jumbotron">
+        <h1>Course Selection</h1>
+        <p class="lead">About to start your University degree? Make sure you follow these tips and tricks to make your first day at UoN a breeze!<br>It can get a bit confusing so take your time but dont worry pictures will be included!</p>
+       
+    </div>
+
+    <div class="row">
+        
+            <h2>Course Essentials</h2>
+            <p>
+                Firstly and most important, Knowing what to pick!
+            </p>
+           
+            <p>
+                To start, go to the University website <a href="https://www.newcastle.edu.au/degrees">here</a> and search for your degree. From there scroll down to find the program handbook.
+            </p>
+        <img src="Images/progplan2.png" />
+            <hr />
+            <h2>Next is understanding the plan and what to pick!</h2>
+            <p>
+                The program handbook is divided into two pages. The first being the plan for your uni life and the second being subjects to pick from!
+            </p>
+        <img src="Images/uniclass1.png" />
+           <hr />
+            <h4>To pass a degree you need to complete all compulsory courses, at least 3 courses from the directive courses which you can use to fill in major and elective spaces.</h4>
+            <p>
+                Tip: Each subject is worth 10 units!
+            </p>
+        <img src="Images/uniclass2.png" /> 
+			<hr />
+			<h4>Now its time to enrol WooHoo!<h4>
+			<hr />
+			<p >First, go to myHub and select 'Course Enrolment'.</p>
+        <img src="Images/enrol1.png" />
+			<hr />
+			<p >Next select the 'Add Courses' Button.</p>
+        <img src="Images/enrol2.png" />
+			<hr />
+			<p >Next it is time to enrol, go to 'Find Courses'</p>
+        <img src="Images/enrol3.png" />
+			<hr />
+			<p >Now here is a great time to refer to the program handbook for the course subject, number and location of your campus.</p>
+        <img src="Images/enrol4.png" />
+			<hr />
+			<p>From here just repeat the process until you have all your classes enrolled, Enjoy!
+			<hr />
+        
+    </div>
+
+</asp:Content>
